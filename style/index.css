@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+.menu-nav {
+  text-align: right;
+  padding: 0;
+}
+
+.menu-nav a {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-top: 40px;
+  color: #fff;
+}
+
+.header {
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+ 
+  background-image: linear-gradient(
+      -225deg,
+      hsla(179, 69%, 51%, 0.404) 0%,
+      hsla(221, 57%, 63%, 0.404) 48%,
+      hsla(273, 67%, 53%, 0.404) 100%
+    ),
+    url(../images/services-header-1.jpg);
+  position: relative;
+}
+
+.hero {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 60px;
+}
+
+.copy {
+  font-size: 24px;
+  font-weight: 300;
+  padding: 20px 0;
+}
+.container-text {
+  padding-bottom: 100px;
+}
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/*Main*/
+.section1 {
+  padding-top: 30px;
+}
+
+.title-section {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: blueviolet;
+  padding-bottom: 60px;
+}
+.container-about-us {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.storys {
+  width: 40%;
+}
+
+.story {
+  margin-bottom: 20px;
+}
+
+.title-story {
+  font-size: 25px;
+  color: #6d39a8;
+  margin-bottom: 20px;
+}
+
+.ilustration {
+  width: 50%;
+}
+
+.services {
+  background: #f2f2f2;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  width: 31%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 4px #847d7d;
+  object-fit: cover;
+}
+
+.table-pricing {
+  display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.pricing {
+  width: 28%;
+  height: 500px;
+  background: #8f48aa;
+  border-radius: 10px;
+  padding: 50px 15px;
+  overflow: hidden;
+  color: #fff;
+}
+.name-pricing {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.active {
+  background: #af48bb;
+  transform: scale(1.1);
+}
+
+.price{
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.benefice{
+    font-weight: 300 ;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #fff;/*Borde punteado*/
+    padding-bottom: 5px;
+}
+.buy-now{
+    background: #fff;
+    color: #8f48aa;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 100px;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 0;
+}
+
+/*Footer*/
+footer {
+    background: #8f48aa;
+    position: relative;
+}
+
+footer .wave{
+    top: 0;
+    left: 0;
+}
+
+footer .title-section{
+    color: #fff;
+}
+
+.redes-sociales {
+
+  width: 60%;
+  display: flex;
+
+  margin: auto;
+  justify-content: center;
+}
+
+.redes-sociales i {
+  font-size: 40px;
+  color: #e0d6d6;
+  padding: 15px 15px;
+}
+
+/* form {
+    width: 100%;
+    height: 70vh;
+    margin: 60px auto;
+    padding: 60px 0;
+    text-align: center;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   font-family: 'Raleway', sans-serif;
+   color: #fff;
+  }
+  
+  h2 {
+    color: #a89c9c;
+    font-size: 40px;
+  }
+
+  input {
+    border: 1px solid #fff;
+    background: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    outline: none;
+    padding: 20px 10px;
+    color: #fff;
+    margin-bottom: 25px;
+  }
+  
+  input[type="text"], input[type="email"] {
+    width: 48%;
+  }
+
+  textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 350px;
+    min-height: 250px;
+    background: none;
+  }
+  
+  @media screen and (max-width: 1080px) {
+    form {
+      width: 60%;
+    }
+    h2 {
+      font-size: 35px;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    form {
+      width: 75%;
+    }
+    h2 {
+      font-size: 35px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    form {
+      width: 95%;
+    }
+    h2 {
+      font-size: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 300px) {
+    form {
+      width: 95%;
+    }
+    h2 {
+      font-size: 10px;
+    }
+  }
+   */
+
+   form {
+    width: 70%;
+    margin: auto;
+    padding: 30px 0;
+    text-align: center;
+   
+  }
+  h2 {
+    color: #413b3b;
+    font-size: 40px;
+  }
+  input {
+    padding: 10px 0;
+    display: inline-block;
+    margin-top: 30px;
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid #8a8686;
+  }
+  
+  input[type="submit"] {
+    width: 30%;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: #1c1a1a;
+    border: none;
+    
+  }
+
+  textarea{
+    max-width: 60%;
+    min-width:70%;
+    max-height: 350px;
+    min-height: 250px;
+    margin: 35px auto;
+
+  }
+
+  .Follow{
+    color: #fff;
+    font-size:  15px;
+    font-style: oblique;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  @media screen and (max-width: 750px) {
+    .container{
+      width: 90%;
+    }
+
+    .menu-nav{
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+    }
+
+    .title-section{
+      font-size: 28px;
+    }
+    .copy{
+      font-size: 22px;
+    }
+    .container-about-us{
+      justify-content: center;
+    }
+    .storys{
+      width: 80%;
+    }
+    .ilustration{
+      width: 80%;
+      margin-bottom: 40px;
+    }
+
+    .image-container{
+      width: 47%;
+    }
+    .pricing{
+      width: 60%;
+      margin-bottom: 40px;
+    }
+
+    .table-pricing{
+      height: auto;
+    }
+    form {
+      width: 100%;
+    }
+    h2 {
+      font-size: 35px;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .container{
+      width: 93%;
+    }
+    .header{
+      width: 100%;
+      background-position: none;
+    }
+    .menu-nav{
+      justify-content: space-evenly;
+      display: flex;
+    }
+
+    .hero h1 {
+      font-size: 35px;
+    }
+
+    .title-section{
+      font-size: 28px;
+      
+    }
+    .copy{
+      font-size: 22px;
+      
+    }
+    .title-story{
+      text-align: center;
+      padding: 15px;
+    }
+    .text-story{
+      text-align: center;
+    }
+    .storys{
+      width: 80%;
+    }
+    .ilustration{
+      width: 80%;
+      margin-bottom: 40px;
+    }
+
+    .image-container{
+      width: 80%;
+    }
+    .pricing{
+      width: 60%;
+      margin-bottom: 40px;
+    }
+
+    .table-pricing{
+      height: auto;
+      
+    }
+    form {
+      width: 100%;
+    }
+    h2 {
+      font-size: 35px;
+    }
+  }
+  
+ 
