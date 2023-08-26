@@ -225,6 +225,8 @@ body {
   padding: 50px 15px;
   overflow: hidden;
   color: #fff;
+  margin-bottom: 45px 0;
+
 }
 
 .name-pricing {
@@ -332,6 +334,16 @@ textarea {
   text-align: center;
   margin-top: 10px;
 }
+
+
+@media screen and (max-width <= 950px) {
+  
+    .pricing {
+      height: auto;
+      flex-direction: column;
+
+    }
+  }
 
 @media screen and (max-width: 750px) {
   .container {
